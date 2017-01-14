@@ -1,0 +1,7 @@
+Its bad practice to upload mp3 to github,
+so I store all music in my GoogleDrive.
+
+You can download it from:
+https://drive.google.com/drive/folders/0BzkFB0AU0J7zSlZNODliQmp3bWc?usp=sharing
+
+Just download this 18 music files in this folder (media).

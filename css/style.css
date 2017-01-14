@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+body{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 13px;
+  line-height: 1.5em;
+  color: white;
+  background: url('../img/bg.jpg');
+}
+.clearfix{
+  clear: both;
+}
+
+
+/* Big container */
+#container{
+  width: 330px;
+  min-height: 400px;
+  background: #333;
+  overflow: auto;
+  margin: 60px auto;
+  border: 2px solid #666;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+
+/* Track info */
+#audio-img{
+  position: relative;
+  overflow: hidden;
+  height: 330px;
+  margin-bottom: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#audio-info{
+  text-align: center;
+}
+
+#audio-info .artist{
+  font-weight: bold;
+}
+
+.cover{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+
+/* Volume */
+input#volume{
+  width: 95%;
+  /* To make button in range unstandart */
+  -webkit-appearance: none !important;
+  margin-left: 2%;
+  background: #ccc;
+  height: 1px;
+  margin-bottom: 20px;
+}
+
+/* To make button in range unstandart */
+input#volume::-webkit-slider-thumb{
+  -webkit-appearance: none !important;
+  background: url('../img/t=1469304491.png') no-repeat;
+  height: 12px;
+  width: 12px;
+}
+
+
+/* Control buttons */
+#audio-buttons{
+  width: 90%;
+  display: block;
+  margin: 15px auto;
+  margin-left: 23px;
+  overflow: auto;
+}
+/* Scss mixin is better way
+   then copy/paste 4 times */
+button#play{
+  width: 70px;
+  height: 70px;
+  background: url('../img/play.png') no-repeat;
+  float: left;
+}
+button#pause{
+  width: 70px;
+  height: 70px;
+  background: url('../img/pause.png') no-repeat;
+  float: left;
+}
+button#stop{
+  width: 70px;
+  height: 70px;
+  background: url('../img/stop.png') no-repeat;
+  float: left;
+}
+button#prev{
+  width: 70px;
+  height: 70px;
+  background: url('../img/prev.png') no-repeat;
+  float: left;
+  margin-top: 15px;
+}
+button#next{
+  width: 70px;
+  height: 70px;
+  background: url('../img/next.png') no-repeat;
+  margin-top: 15px;
+  float: right;
+}
+
+
+/* Playlist */
+#playlist{
+  list-style: none;
+  padding: 10px;
+}
+
+#playlist li{
+  cursor: pointer;
+  margin: 5px;
+}
+
+#playlist li.active{
+  font-weight: bold;
+  padding: 3px;
+  background: #666;
+}
+
+
+/* Progress bar */
+#progressbar{
+  width: 80%;
+  margin-left: 2%;
+  margin-bottom: 20px;
+  margin-top: 9px;
+  height: 10px;
+  background: url('../img/progress_bg.png') no-repeat;
+  float: left;
+}
+
+#progress{
+  background: url('../img/progress.png') no-repeat;
+  height: 10px;
+  display: inline-block;
+  position: absolute;
+  top: 9px;
+  left: 8px;
+}
+
+#duration{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: 4px 8px;
+  background: #000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+#tracker{
+  position: relative;
+  width: 100%;
+}

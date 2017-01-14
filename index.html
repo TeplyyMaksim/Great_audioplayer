@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Audio player</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="container">
+      <!-- Big title image -->
+      <div id="audio-img">
+        <img class="cover">
+      </div>
+      <!-- /Big title image -->
+
+      <!-- Player -->
+      <div id="audio-player">
+        <!-- Track info -->
+        <div id="audio-info">
+          <span class="artist"></span> - <span class="title"></span>
+        </div>
+        <!-- /Track info -->
+
+        <!-- /Control panel -->
+        <input id="volume" type="range" min="0" max="10" value="5">
+        <br>
+        <div id="audio-buttons">
+          <button id="prev"></button>
+          <button id="play"></button>
+          <button id="pause"></button>
+          <button id="stop"></button>
+          <button id="next"></button>
+        </div>
+        <div class="clearfix"></div>
+        <!-- /Control panel -->
+
+        <!-- Progress -->
+        <div id="tracker">
+          <div id="progressbar">
+            <span id="progress"></span>
+          </div>
+          <span id="duration"></span>
+        </div>
+
+        <div class="clearfix"></div>
+        <!-- /Progress -->
+
+        <!-- Playlist -->
+        <!-- P.S. It is just front end application,
+             songs in the list is just examples, in
+             real app admin/user will upload data
+             from server (admin panel) -->
+        <ul id="playlist">
+          <li song="Hollywood Undead - Undead.mp3" cover="Swan Songs cover.jpg" artist="Hollywood Undead">Undead.mp3</li>
+          <li song="Hollywood Undead - Young.mp3" cover="Swan Songs cover.jpg" artist="Hollywood Undead">Young.mp3</li>
+          <li song="Hollywood Undead - No. 5.mp3" cover="Swan Songs cover.jpg" artist="Hollywood Undead">No.5 .mp3</li>
+          <li song="Hollywood Undead - Sell Your Soul.mp3" cover="Swan Songs cover.jpg" artist="Hollywood Undead">Sell Your Soul.mp3</li>
+          <li song="Hollywood Undead - No Other Place.mp3" cover="Swan Songs cover.jpg" artist="Hollywood Undead">No Other Place.mp3</li>
+          <li song="Hollywood Undead - Knife Called Lust.mp3" cover="Swan Songs cover.jpg" artist="Hollywood Undead">Knife Called Lust.mp3</li>
+          <li song="Hollywood Undead - The Natives.mp3" cover="Swan Songs cover.jpg" artist="Hollywood Undead">The Natives.mp3</li>
+          <li song="Hollywood Undead - Everywhere I Go.mp3" cover="Swan Songs cover.jpg" artist="Hollywood Undead">Everywhere I Go.mp3</li>
+          <li song="Hollywood Undead - California.mp3" cover="Swan Songs cover.jpg" artist="Hollywood Undead">California.mp3</li>
+          <li song="Hollywood Undead - Been To Hell.mp3" cover="American Tragedy cover.jpg" artist="Hollywood Undead">Been To Hell.mp3</li>
+          <li song="Hollywood Undead - Apologize.mp3" cover="American Tragedy cover.jpg" artist="Hollywood Undead">Apologize.mp3</li>
+          <li song="Hollywood Undead - Comin' In Hot.mp3" cover="American Tragedy cover.jpg" artist="Hollywood Undead">Comin' In Hot.mp3</li>
+          <li song="Hollywood Undead - Levitate.mp3" cover="American Tragedy cover.jpg" artist="Hollywood Undead">Levitate.mp3</li>
+          <li song="Hollywood Undead - Lights Out.mp3" cover="American Tragedy cover.jpg" artist="Hollywood Undead">Lights Out.mp3</li>
+          <li song="Hollywood Undead - From The Ground.mp3" cover="Notes From The Undeground cover.jpg" artist="Hollywood Undead">From The Ground.mp3</li>
+          <li song="Hollywood Undead - We Are.mp3" cover="Notes From The Undeground cover.jpg" artist="Hollywood Undead">We Are.mp3</li>
+          <li song="Hollywood Undead - Disease.mp3" cover="Day Of The Dead cover.jpg" artist="Hollywood Undead">Disease.mp3</li>
+          <li song="Hollywood Undead - Save Me.mp3" cover="Day Of The Dead cover.jpg" artist="Hollywood Undead">Save Me.mp3</li>
+        </ul>
+        <!-- /Playlist -->
+      </div>
+      <!-- /Player -->
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
